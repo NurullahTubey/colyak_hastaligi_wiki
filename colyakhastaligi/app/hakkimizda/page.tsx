@@ -1,9 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Heart, Users, Target, Award, Calendar, MapPin } from "lucide-react"
+import { Heart, Users, Target, Calendar } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function AboutPage() {
   return (
@@ -19,7 +17,7 @@ export default function AboutPage() {
               Kütahya Çölyak Derneği
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              2018 yılından bu yana Kütahya'da çölyak hastalığı ile yaşayan bireyler ve aileler için güvenli bir
+              2018 yılından bu yana Kütahya&apos;da çölyak hastalığı ile yaşayan bireyler ve aileler için güvenli bir
               topluluk oluşturuyor, farkındalık yaratıyor ve destek sağlıyoruz.
             </p>
           </div>
@@ -37,7 +35,7 @@ export default function AboutPage() {
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Çölyak hastalığı ile yaşayan bireyler ve ailelerine doğru bilgi, güvenli kaynak rehberi ve topluluk
-                desteği sağlayarak, Kütahya'da glutensiz yaşamı kolaylaştırmak ve hastalık hakkında farkındalık
+                desteği sağlayarak, Kütahya&apos;da glutensiz yaşamı kolaylaştırmak ve hastalık hakkında farkındalık
                 yaratmak.
               </p>
             </div>
@@ -165,7 +163,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex justify-center">
             <Card className="text-center">
               <CardHeader>
                 <Image
@@ -183,39 +181,6 @@ export default function AboutPage() {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
-              <CardHeader>
-                <Image
-                  src="/placeholder.svg?height=150&width=150"
-                  alt="Başkan Yardımcısı"
-                  width={150}
-                  height={150}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <CardTitle>Mehmet Özkan</CardTitle>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Başkan Yardımcısı</p>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Çölyak hastası, topluluk organizatörü</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center">
-              <CardHeader>
-                <Image
-                  src="/placeholder.svg?height=150&width=150"
-                  alt="Sekreter"
-                  width={150}
-                  height={150}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <CardTitle>Dyt. Fatma Kaya</CardTitle>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Sekreter</p>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Diyetisyen, glutensiz beslenme uzmanı</p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

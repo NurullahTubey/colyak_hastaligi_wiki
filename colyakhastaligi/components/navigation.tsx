@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { Menu, Heart, Phone } from "lucide-react"
+import { Menu, Heart } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)

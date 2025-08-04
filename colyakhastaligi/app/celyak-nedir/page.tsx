@@ -1,11 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { AlertTriangle, Download, Heart, Stethoscope, BookOpen, Users } from "lucide-react"
+import { AlertTriangle, Stethoscope, Heart, BookOpen } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function CeliacInfoPage() {
   return (
@@ -235,8 +233,8 @@ export default function CeliacInfoPage() {
                 <Alert className="border-blue-200 bg-blue-50 dark:border-blue-800 dark:bg-blue-950">
                   <AlertTriangle className="h-4 w-4 text-blue-600" />
                   <AlertDescription className="text-blue-800 dark:text-blue-200">
-                    <strong>Sessiz Çölyak:</strong> Bazı hastalarda hiç semptom görülmeyebilir. Bu duruma "sessiz
-                    çölyak" denir ve kan testleri ile tespit edilebilir.
+                    <strong>Sessiz Çölyak:</strong> Bazı hastalarda hiç semptom görülmeyebilir. Bu duruma &ldquo;sessiz
+                    çölyak&rdquo; denir ve kan testleri ile tespit edilebilir.
                   </AlertDescription>
                 </Alert>
               </TabsContent>

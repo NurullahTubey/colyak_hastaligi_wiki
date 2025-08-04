@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram } from "lucide-react"
+import { Heart, Mail, MapPin, Facebook, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 
 export function Footer() {
   return (
@@ -22,12 +21,18 @@ export function Footer() {
               ile birlikte.
             </p>
             <div className="flex space-x-2">
+            <Link href="https://www.facebook.com/groups/167792610607397" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
                 <Facebook className="h-4 w-4" />
               </Button>
+            </Link>
+
+            <Link href="https://www.instagram.com/explore/locations/2138100432963544/kutahya-colyak-ve-pku-metabolik-hastalklar-dernegi/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
                 <Instagram className="h-4 w-4" />
               </Button>
+            </Link>
+
             </div>
           </div>
 
